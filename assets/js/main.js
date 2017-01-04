@@ -2,13 +2,14 @@ var count=1;
 var sheet="assets/css/style";
 function timer(){
   var finalsheet = sheet+count+".css";
-  console.log(finalsheet);
+  //console.log(finalsheet);
   document.getElementById('theme-style').setAttribute('href', finalsheet);
   if(count==17) count=0;
   count=count+1;
   setTimeout(timer, 1000);
 }
 $(document).ready(function() {
+  console.log("Welcome to my website. If you don't like the theme of mysite, please run timer(); function in the console");
 
 //timer();
 
