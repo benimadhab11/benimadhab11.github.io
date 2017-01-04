@@ -1,6 +1,5 @@
 var count=1;
 var sheet="assets/css/style";
-$(document).ready(function() {
 function timer(){
   var finalsheet = sheet+count+".css";
   console.log(finalsheet);
@@ -9,6 +8,8 @@ function timer(){
   count=count+1;
   setTimeout(timer, 1000);
 }
+$(document).ready(function() {
+
 //timer();
 
 
